@@ -6,18 +6,9 @@ pocketmine\plugin\PluginBase;
 
 main class extends PluginBase {
   
-  protected function onEnable(): void {
-    self::$instance = $this;
+  public function OnEnable(): void {
     $this->getLogger()->notice("LobbyCore Activado");
-    (new Loader($this))->load();
   }
   
-  protected function onDisable(): void {
-    $this->getLogger()->notice("LobbyCore Desactivado");
-  }
   
-  protected function getInstance() {
-    return self::$instance;
-  }
-
 }
