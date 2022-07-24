@@ -1,2 +1,2 @@
 # LobbyCore
-LobbyCore by VsCDivinity
+LobbyCore by VsCDivinity V1
