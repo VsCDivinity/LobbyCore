@@ -13,5 +13,11 @@ main class extends PluginBase {
   }
   
   protected function onDisable(): void {
-    $this->getLogger()->notice("LobbyCore Desactivado")
+    $this->getLogger()->notice("LobbyCore Desactivado");
   }
+  
+  protected function getInstance() {
+    return self::$instance;
+  }
+
+}
