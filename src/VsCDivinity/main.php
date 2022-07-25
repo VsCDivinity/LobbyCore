@@ -7,6 +7,7 @@ use pocketmine\Server;
 use pocketmine\scheduler\ClosureTask;
 use pocketmine\plugin\PluginBase;
 use VsCDivinity\EventListener;
+use scoreboard\Scoreboard;
 
 class Main extends PluginBase {
   
@@ -29,11 +30,10 @@ class Main extends PluginBase {
         $scoreboard = new Scoreboard("TiTle", "ScoreBoard", [$player]);
          $scoreboard->removeScoreboard();
          $scoreboard->createScoreboard();
-         $scoreboard->addEntry("---------------------");
-         $scoreboard->addEntry("§7|§l§dPlayers: §r§l" .count ($this->getOnlinePlayers()));
-         $scoreboard->addEntry($this->GetConfig()->get("ServerShop"));
-         $scoreboard->addEntry($this->GetConfig()->get("ServerName"));
-         $scoreboard->addEntry("---------------------");
+         $scoreboard->addEntry($this->GetConfig()->get("Line1"));
+         $scoreboard->addEntry($this->GetConfig()->get("Line2"));
+         $scoreboard->addEntry($this->GetConfig()->get("Line3"));
+         $scoreboard->addEntry($this->GetConfig()->get("Line4"));
          }
     }
 }
