@@ -21,5 +21,9 @@ class EventListener implements Listener {
     public function onHunger(PlayerExhaustEvent $event):void {
         $event->cancel();
     }
-
+    
+    public function onPlayerJoinEvent(PlayerJoinEvent $event) : void {
+        $player = $event->getPlayer();
+        $event->setJoinMessage("&l[&r&d+&r&l] .$player->getName()");
+    }
 }
