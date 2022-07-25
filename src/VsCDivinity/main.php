@@ -31,8 +31,8 @@ class Main extends PluginBase {
         $scoreboard = new Scoreboard("TiTle", "ScoreBoard", [$player]);
          $scoreboard->removeScoreboard();
          $scoreboard->createScoreboard();
+         $scoreboard->addEntry("");
          $scoreboard->addEntry("------------------------");
-         $scoreboard->addEntry("name: .$player");
          $scoreboard->addEntry("@Best Server");
          $scoreboard->addEntry("------------------------");
          }
