@@ -2,6 +2,8 @@
 
 namespace VsCDivinity;
 
+use pocketmine\player\Player;
+use pocketmine\Server;
 use pocketmine\scheduler\ClosureTask;
 use pocketmine\plugin\PluginBase;
 use VsCDivinity\Scoreboard\ScoreboardTask;
@@ -27,10 +29,10 @@ class Main extends PluginBase {
         $scoreboard = new Scoreboard("TiTle", "ScoreBoard", [$player]);
          $scoreboard->removeScoreboard();
          $scoreboard->createScoreboard();
-         $scoreboard->addEntry($this->GetConfig()->get("Line-1"));
+         $scoreboard->addEntry("---------------------");
          $scoreboard->addEntry("§7|§l§dPlayers: §r§l" .count ($this->getOnlinePlayers()));
          $scoreboard->addEntry($this->GetConfig()->get("ServerName"));
-         $scoreboard->addEntry($this->GetConfig()->get("Line-2"));
+         $scoreboard->addEntry("---------------------");
          }
     }
 }
