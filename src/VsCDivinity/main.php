@@ -26,14 +26,15 @@ class Main extends PluginBase {
   }
   
   private function onScore() {
+    $player = event->GetPlayer();
         foreach ($this->getServer()->getOnlinePlayers() as $player) {
         $scoreboard = new Scoreboard("TiTle", "ScoreBoard", [$player]);
          $scoreboard->removeScoreboard();
          $scoreboard->createScoreboard();
-         $scoreboard->addEntry($this->GetConfig()->get("Line1"));
-         $scoreboard->addEntry($this->GetConfig()->get("Line2"));
-         $scoreboard->addEntry($this->GetConfig()->get("Line3"));
-         $scoreboard->addEntry($this->GetConfig()->get("Line4"));
+         $scoreboard->addEntry("------------------------");
+         $scoreboard->addEntry("name: .$player");
+         $scoreboard->addEntry("@Best Server");
+         $scoreboard->addEntry("------------------------");
          }
     }
 }
