@@ -22,7 +22,7 @@ class Main extends PluginBase {
 
     $this->getServer()->getPluginManager()->registerEvents(new EventListener(), $this);
     $this->getServer()->getNetwork()->setname($this->GetConfig()->get("Motd"));
-    $this->getScheduler()->scheduleRepeatingTask(new ClosureTask(function (): void { $this->onScore(); }), 20);
+    $this->getScheduler()->scheduleRepeatingTask(new ScoreboardTask($this), 30);
   }
   
 }
