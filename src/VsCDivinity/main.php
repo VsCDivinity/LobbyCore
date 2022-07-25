@@ -15,8 +15,7 @@ class Main extends PluginBase {
     $this->saveDefaultConfig();
     $this->getResource("config.yml");
     
-    $NetworkName = $this->getConfig()->get("NetworkName");
-    $this->getServer()->getNetwork()->setname("");
+    $this->getServer()->getNetwork()->setname($this->GetConfig()->get("Motd"));
   }
   
   
