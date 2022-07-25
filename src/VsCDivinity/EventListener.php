@@ -10,7 +10,7 @@ use pocketmine\event\player\PlayerExhaustEvent;
 use pocketmine\event\player\PlayerJoinEvent;
 use pocketmine\event\player\PlayerQuitEvent;
 
-class EventListeventer implements Listener {
+class EventListener implements Listener {
   
   public function onDamage(EntityDamageEvent $event):void {
         if(!$event->getEntity() instanceof Player) return;
