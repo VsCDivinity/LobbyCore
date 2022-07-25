@@ -3,6 +3,7 @@
 namespace VsCDivinity;
 
 use pocketmine\plugin\PluginBase;
+use VsCDivinlty\listeners\Listeners;
 
 class Main extends PluginBase {
   
