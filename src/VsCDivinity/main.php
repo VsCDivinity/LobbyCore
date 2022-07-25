@@ -17,7 +17,7 @@ class Main extends PluginBase {
     $this->getResource("config.yml");
     
     $this->getServer()->getNetwork()->setname($this->GetConfig()->get("Motd"));
-    Listeners::init();
+    $this->getServer()->getPluginManager()->registerEvents(new EventListener(), $this);
   }
   
   
