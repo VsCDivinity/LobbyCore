@@ -5,7 +5,7 @@ namespace VsCDivinity;
 use pocketmine\Server;
 use pocketmine\player\Player;
 use pocketmine\event\Listener;
-use pocketmine\event\player\entity\EntityDamageEvent;
+use pocketmine\event\entity\EntityDamageEvent;
 use pocketmine\event\player\PlayerExhaustEvent;
 use pocketmine\event\player\PlayerJoinEvent;
 use pocketmine\event\player\PlayerQuitEvent;
