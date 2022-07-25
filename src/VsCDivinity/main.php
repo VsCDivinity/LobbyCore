@@ -6,7 +6,7 @@ use pocketmine\player\Player;
 use pocketmine\Server;
 use pocketmine\scheduler\ClosureTask;
 use pocketmine\plugin\PluginBase;
-use VsCDivinity\Scoreboard\ScoreboardTask;
+use VsCDivinity\EventListener;
 
 class Main extends PluginBase {
   
