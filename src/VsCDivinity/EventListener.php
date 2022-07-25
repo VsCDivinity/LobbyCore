@@ -24,6 +24,6 @@ class EventListener implements Listener {
     
     public function onPlayerJoinEvent(PlayerJoinEvent $event) : void {
         $player = $event->getPlayer();
-        $event->setJoinMessage("&l[&r&d+&r&l]" . $player->getName());
+        $event->setJoinMessage("§l[§r§d+§r§l]" . $player->getName());
     }
 }
