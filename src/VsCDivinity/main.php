@@ -3,7 +3,7 @@
 namespace VsCDivinity;
 
 use pocketmine\plugin\PluginBase;
-use scoreboard\Scoreboard;
+use VsCDivinity\Scoreboard\ScoreboardTask;
 
 class Main extends PluginBase {
   
@@ -18,7 +18,7 @@ class Main extends PluginBase {
     
     $this->getServer()->getNetwork()->setname($this->GetConfig()->get("Motd"));
     $this->getServer()->getPluginManager()->registerEvents(new EventListener(), $this);
+    $this->getScheduler()->scheduleRepeatingTask(new ScoreboardTask($this), 30);
   }
-  
   
 }
