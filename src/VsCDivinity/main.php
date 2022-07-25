@@ -31,6 +31,7 @@ class Main extends PluginBase {
          $scoreboard->createScoreboard();
          $scoreboard->addEntry("---------------------");
          $scoreboard->addEntry("§7|§l§dPlayers: §r§l" .count ($this->getOnlinePlayers()));
+        $scoreboard->addEntry($this->GetConfig()->get("ServerShop"));
          $scoreboard->addEntry($this->GetConfig()->get("ServerName"));
          $scoreboard->addEntry("---------------------");
          }
