@@ -25,15 +25,4 @@ class Main extends PluginBase {
     $this->getScheduler()->scheduleRepeatingTask(new ClosureTask(function (): void { $this->onScore(); }), 20);
   }
   
-  private function onScore() {
-        foreach ($this->getServer()->getOnlinePlayers() as $player) {
-        $scoreboard = new Scoreboard("TiTle", "ScoreBoard", [$player]);
-         $scoreboard->removeScoreboard();
-         $scoreboard->createScoreboard();
-         $scoreboard->addEntry("");
-         $scoreboard->addEntry("------------------------");
-         $scoreboard->addEntry("@Best Server");
-         $scoreboard->addEntry("------------------------");
-         }
-    }
 }
