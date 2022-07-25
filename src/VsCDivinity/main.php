@@ -26,7 +26,6 @@ class Main extends PluginBase {
   }
   
   private function onScore() {
-    $player = event->GetPlayer();
         foreach ($this->getServer()->getOnlinePlayers() as $player) {
         $scoreboard = new Scoreboard("TiTle", "ScoreBoard", [$player]);
          $scoreboard->removeScoreboard();
