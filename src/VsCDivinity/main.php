@@ -6,7 +6,7 @@ pocketmine\plugin\PluginBase;
 
 main class extends PluginBase {
   
-  public function OnEnable(): void {
+  public function OnLoad(): void {
     $this->getLogger()->notice("LobbyCore Activado");
   }
   
