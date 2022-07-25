@@ -3,6 +3,7 @@
 namespace VsCDivinity;
 
 use pocketmine\plugin\PluginBase;
+use scoreboard\Scoreboard;
 
 class Main extends PluginBase {
   
