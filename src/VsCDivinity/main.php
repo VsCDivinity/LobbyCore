@@ -18,7 +18,7 @@ class Main extends PluginBase {
     
     $this->getServer()->getNetwork()->setname($this->GetConfig()->get("Motd"));
     $this->getServer()->getPluginManager()->registerEvents(new EventListener(), $this);
-    $this->getScheduler()->scheduleRepeatingTask(new ScoreboardTask($this), 30);
+    $this->getScheduler()->scheduleRepeatingTask(new ClosureTask(function (): void { $this->onScore(); }), 20);
   }
   
 }
