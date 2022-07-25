@@ -2,7 +2,7 @@
 
 namespace VsCDivinity;
 
-pocketmine\plugin\PluginBase;
+use pocketmine\plugin\PluginBase;
 
 class Main extends PluginBase {
   
