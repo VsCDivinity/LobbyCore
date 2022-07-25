@@ -3,10 +3,9 @@
 Motd: "§l§aBest Server"
 #change the motd of the server
 #cambia el motd del server
-TiTle: "§l§dScoreboard Name"
-#this is the title of your scoreboard 
-#este es el titulo de tu scoreboard
-Line-1: "---------------------"
-Line-2: "---------------------"
-#lines that appear on the scoreboard 
-#lineas que aparecen en el scoreboard
+ServerName: "Best Server"
+#here you put the name of your server 
+#aqui pones el nombre de tu server
+ServerShop: "BestServer.tebex.ui"
+#here you put the name of your store or page of your server 
+#aqui pones el nombre o la pagina de tu tienda de tu server
