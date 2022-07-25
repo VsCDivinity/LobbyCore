@@ -2,6 +2,7 @@
 
 namespace VsCDivinity;
 
+use pocketmine\scheduler\ClosureTask;
 use pocketmine\plugin\PluginBase;
 use VsCDivinity\Scoreboard\ScoreboardTask;
 
@@ -15,9 +16,9 @@ class Main extends PluginBase {
     @mkdir($this->getDataFolder());
     $this->saveDefaultConfig();
     $this->getResource("config.yml");
-    
-    $this->getServer()->getNetwork()->setname($this->GetConfig()->get("Motd"));
+
     $this->getServer()->getPluginManager()->registerEvents(new EventListener(), $this);
+    $this->getServer()->getNetwork()->setname($this->GetConfig()->get("Motd"));
     $this->getScheduler()->scheduleRepeatingTask(new ClosureTask(function (): void { $this->onScore(); }), 20);
   }
   
