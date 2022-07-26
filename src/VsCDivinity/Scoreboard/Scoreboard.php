@@ -15,13 +15,13 @@ class Scoreboard implements Listener {
   
   public function sendBasicScoreboard(Player $player): void
     {
-    $name = $event = getPlayer();
+    $name = $event = getPlayer()->getName();
     $scoreboard = new ScoreboardAPI();
     $scoreboard->create($player, " §l§bLobby Core ");
     $scoreboard->setLine($player, 1, "§l");
     $scoreboard->setLine($player, 2, "§r----------------------");
     $scoreboard->setLine($player, 3, "§lLobbyCore.tebex.ui");
-    $scoreboard->setLine($player, 4, "§l§bName: §r§l" .$name->getName());
+    $scoreboard->setLine($player, 4, "§l§bName: §r§l" .$name);
     $scoreboard->setLine($player, 5, "----------------------");
   }
 
