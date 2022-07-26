@@ -7,7 +7,6 @@ namespace Lobby\command;
 use pocketmine\command\Command;
 use pocketmine\command\CommandSender;
 use pocketmine\Player\player;
-use pocketmine\utils\TextFormat;
 
 class FlyCommand extends Command
 {
@@ -32,11 +31,11 @@ class FlyCommand extends Command
         if ($sender->getAllowFlight() === false) {
             $sender->setFlying(true);
             $sender->setAllowFlight(true);
-            $sender->sendMessage(TextFormat::GREEN . "You have enabled the flight!");
+            $sender->sendMessage("§l[§r§c§l!§r§l] §r§lFly activate");
         } else {
             $sender->setFLying(false);
             $sender->setAllowFlight(false);
-            $sender->sendMessage(TextFormat::RED . "You have disabled the flight!");
+            $sender->sendMessage("§l[§r§c§l!§r§l] §r§lfly disabled ");
         }
     }
 }
