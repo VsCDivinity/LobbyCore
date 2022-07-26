@@ -21,7 +21,7 @@ class ScoreboardTask Task implements Listener {
     $scoreboard->setLine($player, 1, "§l");
     $scoreboard->setLine($player, 2, "----------------------");
     $scoreboard->setLine($player, 3, "LobbyCore.tebex.ui");
-    $scoreboard->setLine($player, 4, "----------------------");
+    $scoreboard->setLine($player, 4, "----------------------");{
   }
 
 }
