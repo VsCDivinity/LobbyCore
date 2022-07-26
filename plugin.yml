@@ -9,5 +9,5 @@ permissions:
     default: op
   ping.use:
     default: op
-  menu.use:
+  discord.use:
     default: op
