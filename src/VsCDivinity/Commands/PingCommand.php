@@ -25,8 +25,9 @@ class PingCommand extends Command {
       if (!$sender instanceof Player) {
           return;
       }
-    
-      if (!$sender->sendMessage("your ping is" .$sender->getPing()));
+      
+      $ping = $sender->getNetworkSession()->getPing();
+      if (!$sender->sendMessage("§l[§r§l§c!§r§l] §r§lYour ping is §l§a" .$ping));
     }
     
       
