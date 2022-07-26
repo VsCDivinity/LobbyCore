@@ -2,12 +2,9 @@
 
 namespace VsCDivinity;
 
-use pocketmine\player\Player;
-use pocketmine\Server;
-use pocketmine\scheduler\ClosureTask;
 use pocketmine\plugin\PluginBase;
 use VsCDivinity\EventListener;
-use scoreboard\Scoreboard;
+use VsCDivinity\Scoreboard\ScoreboardTask;
 
 class Main extends PluginBase {
   
