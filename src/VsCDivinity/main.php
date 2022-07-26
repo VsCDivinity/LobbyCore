@@ -5,6 +5,7 @@ namespace VsCDivinity;
 use pocketmine\plugin\PluginBase;
 use VsCDivinity\EventListener;
 use VsCDivinity\Scoreboard\Scoreboard;
+use VsCDivinity\Commands\FlyCommand;
 
 class Main extends PluginBase {
   
