@@ -20,7 +20,7 @@ class Scoreboard implements Listener {
     $scoreboard->setLine($player, 1, "§l");
     $scoreboard->setLine($player, 2, "§r----------------------");
     $scoreboard->setLine($player, 3, "§lLobbyCore.tebex.ui");
-    $scoreboard->setLine($player, 4, "§l§bName: §r§l" .$player->getDisplayName);
+    $scoreboard->setLine($player, 4, "§l§bName: §r§l" .$player->getDisplayName());
     $scoreboard->setLine($player, 5, "----------------------");
   }
 
