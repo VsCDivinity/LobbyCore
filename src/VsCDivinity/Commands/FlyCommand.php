@@ -20,8 +20,8 @@ class FlyCommand extends Command
     public function execute(CommandSender $sender, string $commandLabel, array $args): void
     {
         if (!$sender->hasPermission("fly.use")) {
-             $sender->sendMessage("§l[§r§c§l!§r§l] §r§c§lyou do not have permissions to use this command ");
-            return;
+             $sender->sendMessage("§l[§r§c§l!§r§l] §r§c§lyou do not have permissions to use this command");
+             return;
         }
 
         if (!$sender instanceof Player) {
