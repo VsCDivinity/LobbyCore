@@ -1,7 +1,7 @@
 <?php
 
 
-namespace Test;
+namespace VsCDivinity\Scoreboard;
 
 use pocketmine\network\mcpe\protocol\RemoveObjectivePacket;
 use pocketmine\network\mcpe\protocol\SetDisplayObjectivePacket;
