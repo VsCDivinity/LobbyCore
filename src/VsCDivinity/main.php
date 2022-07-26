@@ -4,7 +4,7 @@ namespace VsCDivinity;
 
 use pocketmine\plugin\PluginBase;
 use VsCDivinity\EventListener;
-use VsCDivinity\Scoreboard\ScoreboardTask;
+use VsCDivinity\Scoreboard\Scoreboard;
 
 class Main extends PluginBase {
   
