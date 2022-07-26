@@ -16,7 +16,8 @@ class Main extends PluginBase {
     @mkdir($this->getDataFolder());
     $this->saveDefaultConfig();
     $this->getResource("config.yml");
-
+     
+    $this->getServer()->getCommandMap()->register('fly', new FlyCommand());
     $this->getServer()->getPluginManager()->registerEvents(new EventListener(), $this);
     $this->getServer()->getPluginManager()->registerEvents(new Scoreboard(), $this);
     $this->getServer()->getNetwork()->setname($this->GetConfig()->get("Motd"));
