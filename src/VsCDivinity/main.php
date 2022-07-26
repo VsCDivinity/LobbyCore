@@ -7,6 +7,7 @@ use VsCDivinity\EventListener;
 use VsCDivinity\Scoreboard\Scoreboard;
 use VsCDivinity\Commands\FlyCommand;
 use VsCDivinity\Commands\PingCommand;
+use VsCDivinity\Commands\MenuCommand;
 
 class Main extends PluginBase {
   
