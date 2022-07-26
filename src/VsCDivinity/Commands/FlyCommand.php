@@ -1,12 +1,12 @@
 <?php
 
 
-namespace Lobby\command;
+namespace VsCDivinity\Commands;
 
 
 use pocketmine\command\Command;
 use pocketmine\command\CommandSender;
-use pocketmine\Player\player;
+use pocketmine\player\Player;
 
 class FlyCommand extends Command
 {
