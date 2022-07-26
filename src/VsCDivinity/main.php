@@ -7,7 +7,7 @@ use VsCDivinity\EventListener;
 use VsCDivinity\Scoreboard\Scoreboard;
 use VsCDivinity\Commands\FlyCommand;
 use VsCDivinity\Commands\PingCommand;
-use VsCDivinity\Commands\MenuCommand;
+use VsCDivinity\Commands\DiscordCommand;
 
 class Main extends PluginBase {
   
@@ -22,7 +22,7 @@ class Main extends PluginBase {
      
     $this->getServer()->getCommandMap()->register('fly', new FlyCommand());
     $this->getServer()->getCommandMap()->register('ping', new PingCommand());
-    $this->getServer()->getCommandMap()->register('menu', new MenuCommand());
+    $this->getServer()->getCommandMap()->register('discord', new DiscordCommand());
     $this->getServer()->getPluginManager()->registerEvents(new EventListener(), $this);
     $this->getServer()->getPluginManager()->registerEvents(new Scoreboard(), $this);
     $this->getServer()->getNetwork()->setname($this->GetConfig()->get("Motd"));
