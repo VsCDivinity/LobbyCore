@@ -6,7 +6,7 @@ use pocketmine\command\Command;
 use pocketmine\command\CommandSender;
 use pocketmine\player\Player;
 
-class DiscordCommand extends Command implements Listener {
+class DiscordCommand extends Command {
   
   public function __construct() {
     
