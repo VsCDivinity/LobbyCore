@@ -18,9 +18,8 @@ class Main extends PluginBase {
     $this->getResource("config.yml");
 
     $this->getServer()->getPluginManager()->registerEvents(new EventListener(), $this);
-    $this->getServer()->getPluginManager()->registerEvents(new ScoreboardTask(), $this);
+    $this->getServer()->getPluginManager()->registerEvents(new Scoreboard(), $this);
     $this->getServer()->getNetwork()->setname($this->GetConfig()->get("Motd"));
-    $this->getScheduler()->scheduleRepeatingTask(new ScoreboardTask($this), 30);
   }
   
 }
