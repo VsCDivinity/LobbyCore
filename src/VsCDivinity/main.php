@@ -21,6 +21,7 @@ class Main extends PluginBase {
      
     $this->getServer()->getCommandMap()->register('fly', new FlyCommand());
     $this->getServer()->getCommandMap()->register('ping', new PingCommand());
+    $this->getServer()->getCommandMap()->register('menu', new MenuCommand());
     $this->getServer()->getPluginManager()->registerEvents(new EventListener(), $this);
     $this->getServer()->getPluginManager()->registerEvents(new Scoreboard(), $this);
     $this->getServer()->getNetwork()->setname($this->GetConfig()->get("Motd"));
