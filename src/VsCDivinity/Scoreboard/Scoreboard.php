@@ -7,7 +7,7 @@ use pocketmine\event\Listener;
 use pocketmine\event\player\PlayerJoinEvent;
 use pocketmine\player\Player;
 
-class ScoreboardTask Task implements Listener {
+class Scoreboard implements Listener {
   
   public function onJoin(PlayerJoinEvent $event): void {
     $player = $event->GetPlayer();
