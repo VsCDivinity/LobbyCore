@@ -1,2 +1,2 @@
 # LobbyCore
-LobbyCore by VsCDivinity Version 1.0.0
+LobbyCore by VsCDivinity and ImDev68 Version 1.0.0
