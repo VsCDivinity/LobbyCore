@@ -27,7 +27,7 @@ class EventListener implements Listener {
         $event->setJoinMessage("§l[§r§d+§r§l] §l" . $player->getName());
         $player->sendMessage("========================");
         $player->sendMessage("Lobby Core");
-        $player->sendMessage("§7Discord: §bDiscord.gg/Lobbycore"
+        $player->sendMessage("§7Discord: §bDiscord.gg/Lobbycore");
         $player->sendMessage("========================");
     }
 }
